@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter p839v55,$(TARGET_DEVICE)),)
+ifneq ($(filter p839v55 picmt vegetalte,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
@@ -74,7 +74,7 @@ $(MBA_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(MBA_SYMLINK)
 
-ifneq ($(filter p839v55,$(TARGET_DEVICE)),)
+ifneq ($(filter piccolo picmt,$(TARGET_DEVICE)),)
 
 # MODEM
 MODEM_IMAGES := \
